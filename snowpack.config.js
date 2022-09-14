@@ -1,11 +1,11 @@
-/** @type{import("snowpack").SnowpackUserConfig } */
+/** @type
+ {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-
-    public: '/',
-    src: '/_dist_',
+    public: "/",
+    src: "/_dist_",
   },
   buildOptions: {
-    baseUrl: 'https://rimac9.github.io/workshop-1',
+    baseUrl: "https://rimac9.github.io/dom-gh-page",
   },
-}
+};
