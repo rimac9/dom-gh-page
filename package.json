@@ -1,4 +1,6 @@
 {
+  
+  "homepage": "https://rimac9.github.io/worshop-1",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -18,3 +20,4 @@
     "gh-pages": "^4.0.0"
   }
 }
+
