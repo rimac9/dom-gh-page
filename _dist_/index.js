@@ -62,7 +62,7 @@ window
 //    container.className = "bg-lime-200	";
    container.append(imagen, title, price);
    
-   container.className = 'bg-green-100 font-bold max-w-64 min-h-24 rounded-xl border-2';
+   container.className = 'bg-green-300 font-bold max-w-64 min-h-24 rounded-xl border-2';
    todosLosItems.push(container);
    
 //    document.querySelector('#app').classList.add('grid-cols-3')
