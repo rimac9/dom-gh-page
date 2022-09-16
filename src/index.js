@@ -5,6 +5,14 @@
 
 const baseURL = "https://platzi-avo.vercel.app";
 const appNode = document.querySelector('#app');
+
+// delegacion de eventos 
+appNode.addEventListener('click', (event) => {
+    if(event.target.nodeName === 'H2' ) {   
+    window.alert('hi')
+    }
+});
+
 //API--- Intl    1. format-fechas, 2. format-monedas
 const formatPrice = (price) => {
     // api de internacionalización 
@@ -15,9 +23,8 @@ const formatPrice = (price) => {
 
 return newPrice;
 };
-
-
 appNode.className = 'mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ' ;
+
 // web api
 // Conectarnos al server
 window
@@ -34,7 +41,7 @@ window
    // URL de la imagen
    imagen.src = `${baseURL}${item.image}`
    imagen.className = "h-25 w-25 m-auto rounded-lg p-10"
-//    imagen.backgroundColor = "bg-lime-200"
+   
 
 
     //crear titulo
@@ -48,8 +55,12 @@ window
     title.style.fontSize = "3rem" */
     //  2° en forma de clases 
     title.className = ' text-green-700 text-lg bg-yellow-400 p-2'  
-
     
+   /*  alerta a cada h2
+    title.addEventListener('click', () => {
+        window.alert('hi')
+    });
+     */
         
     //crear precio
    const price = document.createElement('div');
